@@ -31,9 +31,7 @@ function App() {
       })
       .then((res) => {
         if(res.data.length !== 0) {
-          const data = dataAPI;
-          data.push(res.data);
-          setDataAPI(data);
+         setDataAPI(arr => [...arr, ...res.data])
         }
       })
       .catch((message, error) => {
@@ -41,6 +39,7 @@ function App() {
         console.log(error);
       });
   };
+
   useEffect(() => {
     onInitData()
   }, []);
@@ -48,7 +47,7 @@ function App() {
   return (
     <div>
       <Header updateFilter={onHandleFilter} />
-      <Contents />
+      <Contents data={dataAPI} />
     </div>
   );
 }
