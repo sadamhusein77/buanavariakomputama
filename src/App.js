@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Header from "./parts/Header";
 import Contents from "./parts/Contents";
+import './App.css'
 function App() {
   const BASEURL = "https://api.thecatapi.com/v1/breeds";
   const [dataAPI, setDataAPI] = useState([]);

@@ -1,0 +1,16 @@
+.scroll-green::-webkit-scrollbar {
+    width: 4px;
+    cursor: pointer;
+    /* background-color: rgba(229, 231, 235, var(--bg-opacity)); */
+
+}
+.scroll-green::-webkit-scrollbar-track {
+    /* background-color: rgba(229, 231, 235, var(--bg-opacity)); */
+    cursor: pointer;
+    background: #e5e7eb;
+}
+.scroll-green::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #15803d;
+    /*outline: 1px solid slategrey;*/
+}
