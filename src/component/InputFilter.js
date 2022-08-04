@@ -7,7 +7,7 @@ export default function InputFilter({ data, onSearch, onFilter }) {
         type="text"
         value={data}
         className="p-2 rounded-xl focus:outline-none"
-        placeholder="Search ..."
+        placeholder="Search by name..."
         onChange={onSearch}
       />
       <div
